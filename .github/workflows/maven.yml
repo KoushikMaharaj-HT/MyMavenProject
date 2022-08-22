@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run jar
-      run: java -jar MyMavenProject-1.0-SNAPSHOT.jar
+      run: java -jar /home/runner/work/MyMavenProject/MyMavenProject/target/MyMavenProject-1.0-SNAPSHOT.jar
