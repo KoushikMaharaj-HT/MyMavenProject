@@ -26,3 +26,5 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Run jar
       run: java -jar /home/runner/work/MyMavenProject/MyMavenProject/target/MyMavenProject-1.0-SNAPSHOT.jar
+    - name: Build docker image
+      run: docker build . --file Dockerfile -t test-image
